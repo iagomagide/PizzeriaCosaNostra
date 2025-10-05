@@ -1,0 +1,13 @@
+ID,Nombre,Dirección,CodigoPostal,Población,Provincia,Teléfono,m2
+LCL001,Cosa Nostra A Coruña,Rúa Real 15,15003,A Coruña,A Coruña,+34 981 100 101,250
+LCL002,Cosa Nostra Santiago,Rúa do Vilar 22,15705,Santiago de Compostela,A Coruña,+34 981 100 102,220
+LCL003,Cosa Nostra Ferrol,Av. de Esteiro 45,15403,Ferrol,A Coruña,+34 981 100 103,200
+LCL004,Cosa Nostra Pontevedra,Rúa Michelena 12,36002,Pontevedra,Pontevedra,+34 986 800 201,240
+LCL005,Cosa Nostra Vigo,Rúa Príncipe 7,36202,Vigo,Pontevedra,+34 986 800 202,300
+LCL006,Cosa Nostra Ourense,Rúa do Paseo 33,32003,Ourense,Ourense,+34 988 700 301,230
+LCL007,Cosa Nostra Lugo,Rúa da Raíña 8,27001,Lugo,Lugo,+34 982 600 401,210
+LCL008,Cosa Nostra Ribadeo,Rúa San Roque 14,27700,Ribadeo,Lugo,+34 982 600 402,180
+LCL009,Cosa Nostra Monforte,Rúa Cardenal 20,27400,Monforte de Lemos,Lugo,+34 982 600 403,190
+LCL010,Cosa Nostra Betanzos,Plaza García Hermanos 5,15300,Betanzos,A Coruña,+34 981 100 104,170
+LCL011,Cosa Nostra Lalín,Av. de Buenos Aires 10,36500,Lalín,Pontevedra,+34 986 800 203,200
+LCL012,Cosa Nostra A Estrada,Rúa Nova 32,36680,A Estrada,Pontevedra,+34 986 800 210,190

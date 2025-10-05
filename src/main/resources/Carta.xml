@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Carta>
+    <Pizza ID="PZZ001">
+        <Nombre>Mamma Mia</Nombre>
+        <Descripcion>Clásica pizza con base de tomate, mozzarella, pepperoni y orégano.</Descripcion>
+        <Calorias>850</Calorias>
+        <Precio>9.5</Precio>
+        <TiempoPreparacion>20</TiempoPreparacion>
+        <Ingredientes>
+            <Ingrediente>ING001</Ingrediente>
+            <Ingrediente>ING002</Ingrediente>
+            <Ingrediente>ING014</Ingrediente>
+            <Ingrediente>ING013</Ingrediente>
+        </Ingredientes>
+    </Pizza>
+    <Pizza ID="PZZ002">
+        <Nombre>Barbacoa</Nombre>
+        <Descripcion>Pizza con salsa barbacoa, pollo, ternera, cebolla y queso mozzarella.</Descripcion>
+        <Calorias>950</Calorias>
+        <Precio>10.5</Precio>
+        <TiempoPreparacion>25</TiempoPreparacion>
+        <Ingredientes>
+            <Ingrediente>ING008</Ingrediente>
+            <Ingrediente>ING009</Ingrediente>
+            <Ingrediente>ING012</Ingrediente>
+            <Ingrediente>ING002</Ingrediente>
+            <Ingrediente>ING010</Ingrediente>
+        </Ingredientes>
+    </Pizza>
+    <Pizza ID="PZZ003">
+        <Nombre>Carbonara</Nombre>
+        <Descripcion>Pizza con base de crema, bacon, huevo cocido, mozzarella y parmesano.</Descripcion>
+        <Calorias>900</Calorias>
+        <Precio>10.0</Precio>
+        <TiempoPreparacion>22</TiempoPreparacion>
+        <Ingredientes>
+            <Ingrediente>ING006</Ingrediente>
+            <Ingrediente>ING007</Ingrediente>
+            <Ingrediente>ING002</Ingrediente>
+            <Ingrediente>ING003</Ingrediente>
+        </Ingredientes>
+    </Pizza>
+    <Pizza ID="PZZ004">
+        <Nombre>Cuatro Quesos</Nombre>
+        <Descripcion>Deliciosa combinación de mozzarella, parmesano, gorgonzola y cheddar.</Descripcion>
+        <Calorias>870</Calorias>
+        <Precio>11.0</Precio>
+        <TiempoPreparacion>20</TiempoPreparacion>
+        <Ingredientes>
+            <Ingrediente>ING002</Ingrediente>
+            <Ingrediente>ING003</Ingrediente>
+            <Ingrediente>ING004</Ingrediente>
+            <Ingrediente>ING005</Ingrediente>
+        </Ingredientes>
+    </Pizza>
+    <Pizza ID="PZZ005">
+        <Nombre>Mediterránea</Nombre>
+        <Descripcion>Pizza con base de tomate, mozzarella, aceitunas, pimientos y queso feta.</Descripcion>
+        <Calorias>880</Calorias>
+        <Precio>11.5</Precio>
+        <TiempoPreparacion>22</TiempoPreparacion>
+        <Ingredientes>
+            <Ingrediente>ING002</Ingrediente>
+            <Ingrediente>ING015</Ingrediente>
+            <Ingrediente>ING016</Ingrediente>
+            <Ingrediente>ING017</Ingrediente>
+        </Ingredientes>
+    </Pizza>
+    <Pizza ID="PZZ006">
+        <Nombre>De la casa</Nombre>
+        <Descripcion>Pizza con muchas cosas</Descripcion>
+        <Calorias>850</Calorias>
+        <Precio>12.0</Precio>
+        <TiempoPreparacion>22</TiempoPreparacion>
+        <Ingredientes>
+            <Ingrediente>ING001</Ingrediente>
+            <Ingrediente>ING002</Ingrediente>
+            <Ingrediente>ING007</Ingrediente>
+        </Ingredientes>
+    </Pizza>
+</Carta>
