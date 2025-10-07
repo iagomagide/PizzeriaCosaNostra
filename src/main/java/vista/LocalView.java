@@ -216,7 +216,7 @@ public class LocalView extends JFrame {
                     l.getPoblacion(),
                     l.getProvincia(),
                     formatearTelefono(l.getTelefono()),
-                    l.getM2() + " m²"
+                    l.getM2()
             });
         }
 

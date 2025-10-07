@@ -28,6 +28,8 @@ public class App {
                     String pathLocal = "src/main/resources/locales.csv";
                     String pathPizza = "src/main/resources/Carta.xml";
                     String pathIngedientes = "src/main/resources/ingredientes.dat";
+                    //Este fichero hay que generarlo
+                    String pathPizzaJSON = "src/main/resources/Pizzas.json";
                     //DAOS TO-DO
 
                     //Servicios TO-DO
@@ -35,6 +37,8 @@ public class App {
                     LocalService localService = new LocalServiceMock();
                     PizzaService pizzaService = new PizzaServiceMock();
                     IngredienteService ingredienteService = new IngredienteServiceMock();
+                    PizzaConversionService conversionService = new PizzaConversionServiceMock();
+
                     /*===============FIN ZONA DE CÓDIGO MODIFICABLE===============*/
                     // Inicializar vistas
                     IdiomaView idiomaView = new IdiomaView();
@@ -47,7 +51,7 @@ public class App {
                     // Inicializar controladores
                     landingController = new LandingPageController(landingService, idiomaView, landingView);
                     localController = new LocalController(localService, localView, landingView);
-                    pizzaController = new PizzaController(pizzaService, pizzaView, landingView);
+                    pizzaController = new PizzaController(pizzaService, pizzaView, landingView,conversionService);
                     ingredienteController = new IngredienteController(ingredienteService, ingredienteView, landingView);
 
                     // Configurar navegación centralizada

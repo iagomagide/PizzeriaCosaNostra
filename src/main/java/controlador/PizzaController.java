@@ -9,15 +9,27 @@ import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import model.Pizza;
+import service.PizzaConversionService;
+import service.PizzaService;
+import vista.LandingPageView;
+import vista.PizzaView;
+
+import javax.swing.*;
+import java.util.ArrayList;
+import java.util.List;
+
 public class PizzaController {
     private PizzaService service;
     private PizzaView view;
     private LandingPageView landingView;
+    private PizzaConversionService conversionService;
 
-    public PizzaController(PizzaService service, PizzaView view, LandingPageView landingView) {
+    public PizzaController(PizzaService service, PizzaView view, LandingPageView landingView, PizzaConversionService conversionService) {
         this.service = service;
         this.view = view;
         this.landingView = landingView;
+        this.conversionService = conversionService;
         initController();
     }
 
@@ -28,6 +40,7 @@ public class PizzaController {
         // Solo manejamos los botones específicos de la funcionalidad de pizzas
         view.getBtnAgregar().addActionListener(e -> agregarPizza());
         view.getBtnActualizar().addActionListener(e -> actualizarPizza());
+        view.getBtnExportarJSON().addActionListener(e -> exportarPizzaJSON());
 
         // También podríamos manejar doble clic en la tabla para editar
         view.getTablePizzas().addMouseListener(new java.awt.event.MouseAdapter() {
@@ -246,5 +259,13 @@ public class PizzaController {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public void exportarPizzaJSON(){
+        if (this.conversionService.generarFicheroPizzas()) {
+            view.mostrarMensajeExito("Fichero generado correctamente");
+        } else {
+            view.mostrarMensajeError("Error en la generación de fichero");
+        }
     }
 }

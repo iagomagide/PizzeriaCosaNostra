@@ -3,11 +3,13 @@ package vista;
 import model.Pizza;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+import java.util.List;
+import java.awt.*;
+import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableCellRenderer;
-import javax.swing.table.DefaultTableModel;
 import java.awt.*;
-import java.util.List;
 
 
 public class PizzaView extends JFrame {
@@ -19,6 +21,7 @@ public class PizzaView extends JFrame {
     private DefaultTableModel tableModel;
     private JButton btnAgregar = new JButton("Agregar Pizza");
     private JButton btnActualizar = new JButton("Actualizar Pizza");
+    private JButton btnExportarJSON = new JButton("Exportar JSON");
 
     public PizzaView() {
         setTitle("Pizzería Cosa Nostra - Gestión de Pizzas");
@@ -39,6 +42,7 @@ public class PizzaView extends JFrame {
         estilizarBoton(btnInicio, new Color(220, 20, 60));        // Rojo pizzeria
         estilizarBoton(btnLocales, new Color(255, 140, 0));       // Naranja
         estilizarBoton(btnIngredientes, new Color(34, 139, 34));  // Verde
+        estilizarBotonAccion(btnExportarJSON, new Color(70, 130, 180)); //Azul acero
 
         panelIzquierdo.add(btnInicio);
         panelIzquierdo.add(btnLocales);
@@ -124,6 +128,7 @@ public class PizzaView extends JFrame {
 
         panelBotones.add(btnAgregar);
         panelBotones.add(btnActualizar);
+        panelBotones.add(btnExportarJSON);
 
         tablaPanel.add(panelBotones, BorderLayout.SOUTH);
         panelPrincipal.add(tablaPanel, BorderLayout.CENTER);
@@ -290,6 +295,23 @@ public class PizzaView extends JFrame {
             tablePizzas.setRowHeight(row, Math.min(preferredHeight, 100)); // Límite máximo
         }
     }
+    public void mostrarMensajeExito(String mensaje) {
+        JOptionPane.showMessageDialog(
+                this,
+                mensaje,
+                "Éxito",
+                JOptionPane.INFORMATION_MESSAGE
+        );
+    }
+
+    public void mostrarMensajeError(String mensaje) {
+        JOptionPane.showMessageDialog(
+                this,
+                mensaje,
+                "Error",
+                JOptionPane.ERROR_MESSAGE
+        );
+    }
 
     // Getters para los botones y componentes
     public JTable getTablePizzas() {
@@ -318,5 +340,9 @@ public class PizzaView extends JFrame {
 
     public JButton getBtnIngredientes() {
         return btnIngredientes;
+    }
+
+    public JButton getBtnExportarJSON() {
+        return btnExportarJSON;
     }
 }
